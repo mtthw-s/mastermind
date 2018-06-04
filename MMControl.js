@@ -1,5 +1,5 @@
 (function(page){
-  function Control(){
+  function MMControl(){
     this.PlayGameSolo = function(){
       
     }
@@ -12,7 +12,7 @@
       while(guess.score.blacks < 4){
         guess = MM.getGuess(guess);
         raw = prompt(guess.flat);
-        debugger;
+        //debugger;
         guess = MM.GetScore(raw, guess);
       }
     }
@@ -20,5 +20,5 @@
     
   }
 
-  page.Control = new Control();
+  page.MMControl = new MMControl();
 })(this)

@@ -1,4 +1,4 @@
-function State(code){
+function MMState(code){
   var self = this;
   self.score = {blacks: 0, whites: 0};
   self.code;

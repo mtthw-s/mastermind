@@ -2,15 +2,24 @@
 <html>
   
   <head>
-    <script src="state.js" ></script>
+    <script src="mmstate.js" ></script>
     <script src="app.js" ></script>
-    <script src="Control.js" ></script>
+    <script src="mmControl.js" ></script>
   </head>
   <body>
+	<h1>Mastermind Game</h1>
+	<p>This is a game of code breaking skill, where the computer can break the code!</p>
+	<p>Instructions:</p>
+	<p>Chose a 4 digit number where each digit is between 1 and 6 (inclusive), write this number down so it isn't forgotten (this is the number that the computer will attempt to find)</p>
+	<p>The computer will present a series of guesses to you, and you must give feedback during the guess promt in the following ways:</p>
+	<ul>
+		<li>Type 'a' for the correct number in the correct place</li>
+		<li>Type 'z' for the correct number in an incorrect place</li>
+		<li>If no numbers match, don't place anything in the feedback line</li>
+	</ul>
+	<p>The computer should find your code in 5 guesses!  Click the button to begin.</p>
+	<input type="button" value="Begin" onClick="MMControl.playGame()" />
     
-    <script>
-      Control.playGame();
-    </script>
   </body>
 
 </html>

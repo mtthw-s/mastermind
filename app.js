@@ -117,7 +117,7 @@
         for(var j = 1; j < 7; j++){
           for(var k = 1; k < 7; k++){
             for(var l = 1; l < 7; l++){
-              self.future.push(new State([i,j,k,l]));
+              self.future.push(new MMState([i,j,k,l]));
             }
           }
         }
